@@ -29,24 +29,39 @@
                                 <rect key="frame" x="146" y="331.33333333333331" width="100" height="99.333333333333314"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q5-rr-NOA">
+                                <rect key="frame" x="150" y="646" width="93" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LETS GO"/>
+                                <connections>
+                                    <action selector="changeLightDidTup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epn-Na-Vgl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Yiy-F0-Qz1" firstAttribute="height" secondItem="El9-yj-lsL" secondAttribute="height" id="1Ly-O0-2Hd"/>
                             <constraint firstItem="yoX-f0-Tbd" firstAttribute="top" secondItem="El9-yj-lsL" secondAttribute="bottom" constant="54" id="2Jl-4H-zJL"/>
+                            <constraint firstItem="5q5-rr-NOA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A97-Zw-P0c"/>
                             <constraint firstItem="Yiy-F0-Qz1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="119" id="DQV-OD-v9U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5q5-rr-NOA" secondAttribute="bottom" constant="137" id="Hf0-10-lfj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="El9-yj-lsL" secondAttribute="trailing" constant="147" id="I3S-R0-Ruj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yoX-f0-Tbd" secondAttribute="bottom" constant="234" id="MKe-ch-vrI"/>
                             <constraint firstItem="El9-yj-lsL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="R7g-NG-E1N"/>
                             <constraint firstItem="yoX-f0-Tbd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="ZId-8L-dUj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yoX-f0-Tbd" secondAttribute="trailing" constant="147" id="aGI-nF-cWQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yiy-F0-Qz1" secondAttribute="trailing" constant="147" id="f5Y-Jj-zOX"/>
                             <constraint firstItem="El9-yj-lsL" firstAttribute="top" secondItem="Yiy-F0-Qz1" secondAttribute="bottom" constant="54" id="pab-br-Ija"/>
+                            <constraint firstItem="5q5-rr-NOA" firstAttribute="top" secondItem="yoX-f0-Tbd" secondAttribute="bottom" constant="62" id="rEJ-Kn-JD2"/>
                             <constraint firstItem="Yiy-F0-Qz1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="wSj-R3-elm"/>
                             <constraint firstItem="yoX-f0-Tbd" firstAttribute="height" secondItem="El9-yj-lsL" secondAttribute="height" id="xGW-hv-b2N"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="yoX-f0-Tbd" id="yO7-IH-VpL"/>
+                        <outlet property="reedLightView" destination="Yiy-F0-Qz1" id="nmh-zB-IEJ"/>
+                        <outlet property="yellowLightView" destination="El9-yj-lsL" id="Q5e-wG-XKr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
